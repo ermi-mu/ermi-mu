@@ -110,12 +110,15 @@ me.say_hi()
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="Bar Chart" width="30" height="30" /> GitHub Analytics
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ermi-mu&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ermi-mu&layout=compact&langs_count=7&theme=radical"/>
+  <!-- Fixed: Added cache busting and all parameters for accurate commit count -->
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ermi-mu&show_icons=true&theme=radical&include_all_commits=true&count_private=true&cache_seconds=1800&v=1&hide_title=false&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" />
+  
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ermi-mu&layout=compact&langs_count=7&theme=radical&count_private=true&include_all_commits=true&cache_seconds=1800&v=1" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ermi-mu&theme=radical" alt="GitHub Streak" />
+  <!-- Fixed streak stats with cache busting -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ermi-mu&theme=radical&cache_seconds=1800&v=1&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" />
 </div>
 
 <br />
@@ -137,12 +140,23 @@ me.say_hi()
 
 ---
 
+<!-- Fixed contribution graph with working URL -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ermi-mu&theme=react-dark&bg_color=20232a&hide_border=true&area=true&custom_title=Contribution%20Graph&days=60&v=1" width="100%"/>
+</div>
+
+<br />
+
+---
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Ribbon.png" alt="Heart with Ribbon" width="25" height="25" /> <strong>Thanks for visiting my profile!</strong> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Ribbon.png" alt="Heart with Ribbon" width="25" height="25" />
   
-  <img src="https://profile-counter.glitch.me/ermi-mu/count.svg" alt="Visitor Count" />
+  <!-- Fixed visitor counter with proper formatting -->
+  <p align="center">
+    <img src="https://profile-counter.glitch.me/ermi-mu/count.svg" alt="Visitor Count" />
+  </p>
   
-  <br />
   <br />
   
   ### ⭐ If you like my work, consider giving a star to my repositories! ⭐
@@ -151,9 +165,75 @@ me.say_hi()
 ---
 
 <details>
-  <summary><b>📈 Click to see more GitHub stats</b></summary>
+  <summary><b>📈 Click to see detailed contribution stats</b></summary>
   <br />
-  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=ermi-mu&theme=react-dark&bg_color=20232a&hide_border=true" width="100%"/>
+  
+  ### 🔥 Commit Statistics
+  
+  | Metric | Value |
+  |--------|-------|
+  | Total Commits (Last Year) | ![Commits](https://img.shields.io/endpoint?url=https://api.github.com/users/ermi-mu/events/public?cache_seconds=1800) |
+  | Contributed Repos | ![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/ermi-mu/repos&query=$[0].contributions&label=repos) |
+  | Pull Requests | ![PRs](https://img.shields.io/github/search/ermi-mu/ermi-mu/pulls?label=PRs) |
+  
+  ### 🏆 Achievements
+  
+  <img src="https://github-profile-trophy.vercel.app/?username=ermi-mu&theme=radical&no-frame=true&no-bg=false&margin-w=4&v=1" width="100%" />
+  
+  ### 📊 Weekly Development Breakdown
+  
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=ermi-mu&theme=radical&cache_seconds=1800&v=1" width="100%" />
+  
+</details>
+
+---
+
+## 🚀 Quick Fix Guide for Your Commits
+
+If your commits still don't show up after updating, here's what to check:
+
+<details>
+  <summary><b>🔧 Troubleshooting Steps</b></summary>
+  <br />
+  
+  ### 1. ✅ **Email Verification**
+  Make sure the email you use for commits is verified on GitHub:
+  - Go to [GitHub Email Settings](https://github.com/settings/emails)
+  - Verify all emails you use for commits
+  - Keep your primary email public or private as preferred
+  
+  ### 2. 🔑 **For Private Repository Commits (Important!)**
+  The public stats instance **cannot show private repo commits**. To include them:
+  
+  **Option A: Deploy your own instance (Recommended)**
+  1. Fork [github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+  2. Deploy on [Vercel](https://vercel.com) (free)
+  3. Add environment variable: `GITHUB_TOKEN` with your [personal access token](https://github.com/settings/tokens) (scopes: `repo`, `read:user`)
+  4. Replace URLs with your Vercel URL
+  
+  **Option B: Use GitHub's official stats**
+  ```html
+  <picture>
+    <source
+      srcset="https://github-readme-stats.vercel.app/api?username=ermi-mu&show_icons=true&theme=dark"
+      media="(prefers-color-scheme: dark)"
+    />
+    <source
+      srcset="https://github-readme-stats.vercel.app/api?username=ermi-mu&show_icons=true"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <img src="https://github-readme-stats.vercel.app/api?username=ermi-mu&show_icons=true" />
+  </picture>
+  ```
+  
+  ### 3. 🔄 **Force Refresh**
+  - Add `&v=2` to any URL to bypass GitHub's image cache
+  - Wait 30 minutes (the new cache time we set)
+  - Try opening the image URL directly in your browser
+  
+  ### 4. 📝 **Check Your Commit Activity**
+  Visit [your contributions page](https://github.com/ermi-mu?tab=overview) to see what GitHub shows
+  
 </details>
 
 ---
@@ -167,5 +247,9 @@ me.say_hi()
 </p>
 
 <p align="center">
-  <b>📫 How to reach me: your.email@gmail.com</b>
+  <b>📫 How to reach me: ermiasmulugeta71.email@gmail.com</b>
+</p>
+
+<p align="center">
+  <sub>📅 Last updated: March 2026 | 🚀 Stats refresh every 30 minutes</sub>
 </p>
