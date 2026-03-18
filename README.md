@@ -24,7 +24,7 @@ I'm a passionate developer exploring the world of code and building cool project
 class Ermi:
     def __init__(self):
         self.username = "ermi-mu"
-        self.name = "Ermi"
+        self.name = "Ermias Mulugeta"
         self.position = "Developer"
         self.location = "Ethiopia"
         self.web = "https://github.com/ermi-mu"
